@@ -1,0 +1,69 @@
+#!/bin/bash
+echo "" > index.html
+
+
+v=Olfr1133,Wdr27,Cilp2,Tspan10,Dnahc7a
+g=1
+echo "<h3>Group ${g}</h3><br/>" >> index.html
+for i in ${v//,/ }
+do
+  cp "/home/arkty/dev/vitamina/qtl_separate/clustering/find_peaks_out/lods.png/${i}.png" "./"
+  echo "<img src='${i}.png'/>" >> index.html
+  echo "$i"
+done
+echo "<br/>" >> index.html
+
+v=Olfr477,Slc25a31,Abcb4,Rapgefl1,Egfr
+g=2
+echo "<h3>Group ${g}</h3><br/>" >> index.html
+for i in ${v//,/ }
+do
+  cp "/home/arkty/dev/vitamina/qtl_separate/clustering/find_peaks_out/lods.png/${i}.png" "./"
+  echo "<img src='${i}.png'/>" >> index.html
+  echo "$i"
+done
+echo "<br/>" >> index.html
+
+v=Zfp354a,Slc30a10,Abra,Snord96a,Prss2
+g=3
+echo "<h3>Group ${g}</h3><br/>" >> index.html
+for i in ${v//,/ }
+do
+  cp "/home/arkty/dev/vitamina/qtl_separate/clustering/find_peaks_out/lods.png/${i}.png" "./"
+  echo "<img src='${i}.png'/>" >> index.html
+  echo "$i"
+done
+echo "<br/>" >> index.html
+
+v=Bfsp2,Nr1h5,Olfr812,Ranbp17,Accn1
+g=4
+echo "<h3>Group ${g}</h3><br/>" >> index.html
+for i in ${v//,/ }
+do
+  cp "/home/arkty/dev/vitamina/qtl_separate/clustering/find_peaks_out/lods.png/${i}.png" "./"
+  echo "<img src='${i}.png'/>" >> index.html
+  echo "$i"
+done
+echo "<br/>" >> index.html
+
+v=Gpn1,Fbxw2,Phf23,Bnip3l,Cox6b1
+g=5
+echo "<h3>Group ${g}</h3><br/>" >> index.html
+for i in ${v//,/ }
+do
+  cp "/home/arkty/dev/vitamina/qtl_separate/clustering/find_peaks_out/lods.png/${i}.png" "./"
+  echo "<img src='${i}.png'/>" >> index.html
+  echo "$i"
+done
+echo "<br/>" >> index.html
+
+v=Mrps7,Ints1,Avpi1,Afap1l1,Slc25a11
+g=6
+echo "<h3>Group ${g}</h3><br/>" >> index.html
+for i in ${v//,/ }
+do
+  cp "/home/arkty/dev/vitamina/qtl_separate/clustering/find_peaks_out/lods.png/${i}.png" "./"
+  echo "<img src='${i}.png'/>" >> index.html
+  echo "$i"
+done
+echo "<br/>" >> index.html
